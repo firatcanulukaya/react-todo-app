@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: #1a202c;
+}
+
+.main-container {
+  max-width: 550px;
+  padding: 2rem;
+}
+
+.todo-header {
+  color: #fff;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.todo-done{
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.todo-form {
+  margin-top: 1rem;  
+}
+
+.todo-form input{
+  border: 1px solid #222a3a;
+}
+
+.todo-form input:valid {
+  border: 1px solid #005021;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-input {
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #222a3a;
+  border: none;
+  outline: none;
+}
+
+.todo-button {
+  width: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #2c364b;
+  cursor: pointer;
+}
+
+.todo-button:hover {
+  background: #222a3a;
+}
+
+.todo-list {
+  margin-top: 1rem;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  font-size: 1rem;
+  color: #fff;
+}
+
+.todo-item-text {
+  color: #fff;
+  font-weight: 500;  
+}
+
+.first-item {
+  max-width: 420px;
+  display: flex;  
+  word-break: break-all;
+}
+
+.second-item {
+  display: flex;
+}
+
+.todo-item-button {
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.todo-item-button:hover {
+  color: #777777;
+}
+
+@media screen and (max-width: 540px) {
+  .main-container {
+    padding: 1rem;
+  }
+  .todo-input {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .todo-input {
+    width: 80%;
+  }
+}
